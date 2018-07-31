@@ -92,9 +92,12 @@ namespace ReativeEventDemo
                 .StartWith(initialValue);
         }
 
-        private IObservable<double> GetEntryEventStream(Entry entry)
+        private static IObservable<double> GetEntryEventStream(Entry entry)
         {
-            entry.Completed += (sender, args) => { };
+            Observable.FromEventPattern<EventHandler<TextChangedEventArgs>, TextChangedEventArgs>(
+                    ev => entry.TextChanged += ev,
+                    ev => entry.TextChanged -= ev)
+                .Do(_ => { entry.Text = entry.Text.ToUpper(); });
 
             return Observable.FromEventPattern(
                     ev => entry.Completed += ev,

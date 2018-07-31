@@ -10,48 +10,50 @@
         </OnPlatform>
     </ContentPage.Padding>
 
-    <Grid RowSpacing="5" BackgroundColor="DarkGray">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="50" />
-            <RowDefinition Height="50" />
-            <RowDefinition Height="50" />
-            <RowDefinition Height="50" />
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="100"/>
-        </Grid.ColumnDefinitions>
-        <StackLayout Grid.ColumnSpan="2" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"
+    <ScrollView>
+        <Grid RowSpacing="5" BackgroundColor="DarkGray">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+            <StackLayout Grid.ColumnSpan="2" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"
                      Padding="1" BackgroundColor="Black" >
-            <StackLayout BackgroundColor="White" VerticalOptions="Center" HorizontalOptions="Center">
-                <BoxView  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" HeightRequest="300" WidthRequest="300" BackgroundColor="White" x:Name="ColorCanvas"/>
+                <StackLayout BackgroundColor="White" VerticalOptions="Center" HorizontalOptions="Center">
+                    <BoxView  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" HeightRequest="300" WidthRequest="300" BackgroundColor="White" x:Name="ColorCanvas"/>
+                </StackLayout>
             </StackLayout>
-        </StackLayout>
-        <StackLayout Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
-            <Label Text="Red:" TextColor="Red" VerticalOptions="Center" WidthRequest="50"/>
-            <Slider Minimum="0" Maximum="1" Value="0" HorizontalOptions="FillAndExpand" x:Name="RedSlider"/>
-        </StackLayout>
-        <Entry Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="End" x:Name="RedEntry" Text="00" />
+            <StackLayout Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+                <Label Text="Red:" TextColor="Red" VerticalOptions="Center" WidthRequest="50"/>
+                <Slider Minimum="0" Maximum="1" Value="0" HorizontalOptions="FillAndExpand" x:Name="RedSlider"/>
+            </StackLayout>
+            <Entry Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="End" x:Name="RedEntry" Text="00" Keyboard="Text" />
 
-        <StackLayout Grid.Row="2" Grid.Column="0" Orientation="Horizontal">
-            <Label Text="Green:" TextColor="Green" VerticalOptions="Center" WidthRequest="50"/>
-            <Slider Minimum="0" Maximum="1" Value="0" HorizontalOptions="FillAndExpand" x:Name="GreenSlider"/>
-        </StackLayout>
-        <Entry Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="End" x:Name="GreenEntry" Text="00" />
+            <StackLayout Grid.Row="2" Grid.Column="0" Orientation="Horizontal">
+                <Label Text="Green:" TextColor="Green" VerticalOptions="Center" WidthRequest="50"/>
+                <Slider Minimum="0" Maximum="1" Value="0" HorizontalOptions="FillAndExpand" x:Name="GreenSlider"/>
+            </StackLayout>
+            <Entry Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="End" x:Name="GreenEntry" Text="00" Keyboard="Text" />
 
-        <StackLayout Grid.Row="3" Grid.Column="0" Orientation="Horizontal">
-            <Label Text="Blue:" TextColor="Blue" VerticalOptions="Center" WidthRequest="50"/>
-            <Slider Minimum="0" Maximum="1" Value="0" HorizontalOptions="FillAndExpand" x:Name="BlueSlider"/>
-        </StackLayout>
-        <Entry Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="End" x:Name="BlueEntry" Text="00" />
+            <StackLayout Grid.Row="3" Grid.Column="0" Orientation="Horizontal">
+                <Label Text="Blue:" TextColor="Blue" VerticalOptions="Center" WidthRequest="50"/>
+                <Slider Minimum="0" Maximum="1" Value="0" HorizontalOptions="FillAndExpand" x:Name="BlueSlider"/>
+            </StackLayout>
+            <Entry Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="End" x:Name="BlueEntry" Text="00"  Keyboard="Text" />
 
-        <StackLayout Grid.Row="4" Grid.Column="0" Orientation="Horizontal">
-            <Label Text="Alpha:" VerticalOptions="Center" WidthRequest="50"/>
-            <Slider Minimum="0" Maximum="1" Value="1" HorizontalOptions="FillAndExpand" x:Name="AlphaSlider"/>
-        </StackLayout>
-        <Entry Grid.Row="4" Grid.Column="1" HorizontalTextAlignment="End" x:Name="AlphaEntry" Text="FF" />
-    </Grid>
+            <StackLayout Grid.Row="4" Grid.Column="0" Orientation="Horizontal">
+                <Label Text="Alpha:" VerticalOptions="Center" WidthRequest="50"/>
+                <Slider Minimum="0" Maximum="1" Value="1" HorizontalOptions="FillAndExpand" x:Name="AlphaSlider"/>
+            </StackLayout>
+            <Entry Grid.Row="4" Grid.Column="1" HorizontalTextAlignment="End" x:Name="AlphaEntry" Text="FF"  Keyboard="Text" />
+        </Grid>
+    </ScrollView>
 
 </ContentPage>
 
