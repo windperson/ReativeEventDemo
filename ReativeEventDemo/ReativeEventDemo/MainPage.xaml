@@ -30,25 +30,25 @@
                 </StackLayout>
             </StackLayout>
             <StackLayout Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
-                <Label Text="Red:" TextColor="Red" VerticalOptions="Center" WidthRequest="50"/>
+                <Label Text="Red:" TextColor="Red" VerticalOptions="Center" WidthRequest="52"/>
                 <Slider Minimum="0" Maximum="1" Value="0" HorizontalOptions="FillAndExpand" x:Name="RedSlider"/>
             </StackLayout>
             <Entry Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="End" x:Name="RedEntry" Text="00" Keyboard="Text" />
 
             <StackLayout Grid.Row="2" Grid.Column="0" Orientation="Horizontal">
-                <Label Text="Green:" TextColor="Green" VerticalOptions="Center" WidthRequest="50"/>
+                <Label Text="Green:" TextColor="Green" VerticalOptions="Center" WidthRequest="52"/>
                 <Slider Minimum="0" Maximum="1" Value="0" HorizontalOptions="FillAndExpand" x:Name="GreenSlider"/>
             </StackLayout>
             <Entry Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="End" x:Name="GreenEntry" Text="00" Keyboard="Text" />
 
             <StackLayout Grid.Row="3" Grid.Column="0" Orientation="Horizontal">
-                <Label Text="Blue:" TextColor="Blue" VerticalOptions="Center" WidthRequest="50"/>
+                <Label Text="Blue:" TextColor="Blue" VerticalOptions="Center" WidthRequest="52"/>
                 <Slider Minimum="0" Maximum="1" Value="0" HorizontalOptions="FillAndExpand" x:Name="BlueSlider"/>
             </StackLayout>
             <Entry Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="End" x:Name="BlueEntry" Text="00"  Keyboard="Text" />
 
             <StackLayout Grid.Row="4" Grid.Column="0" Orientation="Horizontal">
-                <Label Text="Alpha:" VerticalOptions="Center" WidthRequest="50"/>
+                <Label Text="Alpha:" VerticalOptions="Center" WidthRequest="52"/>
                 <Slider Minimum="0" Maximum="1" Value="1" HorizontalOptions="FillAndExpand" x:Name="AlphaSlider"/>
             </StackLayout>
             <Entry Grid.Row="4" Grid.Column="1" HorizontalTextAlignment="End" x:Name="AlphaEntry" Text="FF"  Keyboard="Text" />
